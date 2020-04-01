@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1>Register Form For New Students</h1>
+
+<form action="/Register" method="POST" autocomplete="off">
+    Name : <input type="text" placeholder="Name" name="name">
+    Address : <input type="text" placeholder="Address" name="address">
+    Contact Number : <input type="tel" placeholder="Contact Number" name="number">
+    <select name="Hobbies">
+        <option disabled selected>Hobbies</option>
+        <option>Football</option>
+        <option>Basketball</option>
+        <option>Cricket</option>
+    </select>
+    <input type="submit" value="Register">
+</form>
+
+{% endblock %}
